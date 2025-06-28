@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc" style="width: 100px; height: 100px;  background-color:lightblue;" ></div>
+
+    <br><br> 
+    <h1 id="aa">heading</h1>
+
+    <button id="clickme">clickme</button>
+    <script>
+
+        let a=document.getElementById("abc");
+        a.addEventListener("mouseenter",function() {
+             a.style.backgroundColor="lightcoral";
+        })
+        //mouse out event to change the color
+         a.addEventListener("mouseout",function() {
+             a.style.backgroundColor="lightblue";
+        })
+
+      // change text color 
+       let b=document.getElementById("aa");
+        a.addEventListener("mouseenter",function() {
+             a.style.innerHTML="fff"; 
+        })
+        //mouse out event to change the color
+         a.addEventListener("mouseout",function() {
+             a.style.Color="lightblue";
+        })
+
+
+         
+
+
+        document.getElementById("clickme").addEventListener("dblclick",function(){
+            alert("Button was clicked!");
+        });
+
+         
+
+    </script>
+</body>
+</html>
